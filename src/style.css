@@ -15,8 +15,10 @@ section{
 }
 
 footer{
-    height:500px;
+    padding:80px;
     background-color: black;
+    color:white;
+    text-align:center;
 }
 
 nav{
@@ -29,6 +31,10 @@ ul{
     width:500px;
     justify-content: space-around;
     font-size:30px;
+}
+
+ul.show{
+    display: block;
 }
 
 li{
@@ -117,6 +123,7 @@ p{
 .headshot{
     width:300px;
     border-radius: 100px;
+    margin-left:80px;
 
 }
 
@@ -129,6 +136,7 @@ p{
     width:300px;
     height: 500px;
     box-shadow: 5px 5px 20px grey;
+    margin:10px;
 }
 
 .project-container{
@@ -136,10 +144,16 @@ p{
     justify-content: space-around;
 }
 
+@media only screen and (max-width: 1000px){
+    .project-container{
+        display:flex;
+        flex-wrap: wrap;
+    }
+}
+
 .project-image{
     width:250px;
     border-radius:125px;
-    height:150px;
     margin-top:25px;
 }
 
@@ -159,4 +173,39 @@ a{
 }
 a:hover{
     text-decoration:underline;
+}
+
+.hamburger{
+    display: none;
+}
+
+.hamburger:focus{
+    outline: 0;
+}
+@media only screen and (max-width:1000px){
+    .hamburger{
+        display: block;
+        border:0;
+        background-color:transparent;
+        color:white;
+        font-size:30px;
+        margin:20px;
+    }  
+    ul{
+        display: none;
+        background-color: #1c1d25;
+    }
+
+    ul.show{
+        display: block;
+    }
+
+    nav{
+        display: flex;
+        flex-direction:column-reverse;
+        background-color: #2b2c38;
+    }
+    .logo{
+        display: none;
+    }
 }
