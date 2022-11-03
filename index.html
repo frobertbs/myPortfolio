@@ -15,16 +15,16 @@
         <nav>
             <img class="logo" src="src/images/logo.jpg" alt="Fabian Robert Banu logo">
             <ul>
-                <li>About Me</li>
-                <li>Projects</li>
-                <li>Contact Me</li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact-me">Contact Me</a></li>
             </ul>
         </nav>
         <div class="hero-area">
             <div class="hero-text">
                 <h1>Fabian Robert Banu</h1>
                 <p>Software Engineer</p>
-                <div class="button">About Me </div>
+                <div class="button"><a href="#about-me">About Me</a></div>
             </div>
             <div class="socials">
                 <div><a href="https://www.linkedin.com/in/fabian-robert-banu-917994b9/" class="social"><svg xmlns="http://www.w3.org/2000/svg" fill="#fff" width="50" height="50" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg>
@@ -35,7 +35,7 @@
         </div>
     </section>
 
-    <section class="sub-section">
+    <section class="sub-section" id="about-me">
         <div class="information">
             <h2>About Me</h2>
             <p>Hello. My name is Fabian Robert Banu. I am a Software Engineer</p>
@@ -44,20 +44,21 @@
             <img class="headshot" src="src/images/headshot.jpg" alt="Fabian Robert Banu headshot">
         </div>
     </section>
-    <section class="sub-section-alternative">
+
+    <section class="sub-section-alternative" id="projects">
         <h2>Projects</h2>
         <div class="project-container">
 
             <div class="project-card">
-                <img class="project-imag" src="" alt="Interior Design By Ank">]
-                <h3>Project One</h3>
-                <p class="subtext">Project Description </p>
+                <img class="project-image" src="src/images/project1.png" alt="Interior Design By Ank">
+                <h3>Interior Design By Ank</h3>
+                <p class="subtext">Interior Design Web Page</p>
                 <hr>
-                <p class="subtext">View here</p>
+                <p class="subtext"><a class="project-link" href="https://www.interiordesignbyank.com">View here</a></p>
             </div>
 
             <div class="project-card">
-                <img class="project-imag" src="" alt="Interior Design By Ank">]
+                <img class="project-image" src="" alt="Interior Design By Ank">
                 <h3>Project Two</h3>
                 <p class="subtext">Project Description </p>
                 <hr>
@@ -66,7 +67,9 @@
 
         </div>
     </section>
-    <footer></footer>
+
+
+    <footer id="contact-me"></footer>
     
     <script src="src/app.js"></script>
 </body>
